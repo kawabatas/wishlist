@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>これ☆ほし</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/toko.css">
+    <link rel="apple-touch-icon" href="img/_common/korehoshi.png">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/toko.js"></script>
+    <script type="text/javascript" src="js/jquery.balloon.js"></script>
+    <script>
+        function test(){
+            alert("clicked!");
+        }
+    </script>
+
+</head>
+<body>
+<header>
+    <div id="header">
+        <input type="image" src="img/_common/header/head_back.gif" onClick="history.go(-1);" class="back"></input>
+        <img src="img/_common/header/hrad_title.gif" class="logo" alt="コレ☆ホシ"></img>
+        <div class="clear"></div>
+    </div>
+</header>
+    <!-- ページ本体 -->
+    <div id="main">
+        <div class="toko">
+            <div class="top">
+                <div><img src="img/03_toukou/toko_title.gif"></img></div>
+                <div class="item">
+<!--                     <div id="photo"><input type="image" src="img/03_toukou/dummy_photo.png"></input></div> -->
+                    
+                    <!-- 写真は横向き（ホームボタンが右）でとる -->
+                    <input type="file" accept="image/*;capture=camera" id="item_photo">
+                    <canvas id="mycanvas" width="228" height="208"></canvas>
+                    <textarea class="c5" name="item_comment" rows="5" cols="10" maxlength="140" placeholder="コメントを入力"></textarea>
+                </div><!-- item -->
+            </div><!-- top -->
+        
+            <div class="details clear">
+                <input type="image" src="img/03_toukou/toko_plus_dummy.gif" class="toggle_button" id="add_info" style="float:left"></input>
+                <input type="image" src="img/03_toukou/toko_minus.gif" class="toggle_button" style="display:none"></input>
+                <div class="item_detail first"><label for="add_info">追加の情報を入力する</label></div>
+                <div class="item_detail" style="display:none">
+                    <div class="item_name">
+                        <label>商品名</label>
+                        <input type="text" name="item_name" size="26" placeholder="商品名を入力" class="c5c5 textarea" value=""></input>
+                    </div>
+                    <div class="shop">
+                        <label>店名</label>
+                        <input type="text" name="shop" size="26" placeholder="店名を入力" class="c5c5" value=""></input>
+                    </div>
+                    <div class="cost">
+                        <label>金額</label>
+                        <input type="text" name="cost" size="26" placeholder="金額を入力" class="c5c5" value=""></input>
+                    </div>
+                    <div class="url">
+                        <label>URL</label>
+                        <input type="text" name="url" size="26" placeholder="urlを入力" class="c5c5" value=""></input>
+                    </div>
+                    <div class="tag">
+                        <label>タグ</label>
+                        <input type="text" name="tag" size="26" placeholder="タグを選択" class="c5c5" value=""></input>
+                    </div>
+                    <div class="priority">
+                        <label>ホシ度</label>
+                        <input type="image" src="img/03_toukou/toko_hoshi.gif" id="hoshi_1" class="hoshi"></input>
+                        <input type="image" src="img/03_toukou/toko_hoshi.gif" id="hoshi_2" class="hoshi"></input>
+                        <input type="image" src="img/03_toukou/toko_hoshi.gif" id="hoshi_3" class="hoshi"></input>
+                        <input type="image" src="img/03_toukou/toko_hoshi.gif" id="hoshi_4" class="hoshi"></input>
+                        <input type="image" src="img/03_toukou/toko_hoshi.gif" id="hoshi_5" class="hoshi"></input>
+                    </div>
+                </div><!-- item_detail -->
+            </div><!-- details -->
+
+            <div class="fin">
+                <div class="select_public">
+                    <div class="public">
+                        <label for="public" class="rdobtn">__</label>
+                        <input type="radio" name="select_public" id="public" value="public" checked="checked"></input>
+                        <label class="label_txt">公開する</label>
+                    </div>
+                    <div class="no_public">
+                        <label for="no_public" class="rdobtn">__</label>
+                        <input type="radio" name="select_public" id="no_public" value="no_public"></input>
+                        <label class="label_txt">公開しない</label>
+                    </div>
+                </div>
+                <div class="sns clear">
+                    <div class="fb">
+                        <label for="fb" class="chkbox">__</label>
+                        <input type="checkbox" name="sns" id="fb" value="fb"></input>
+                        <img src="img/03_toukou/toko_sns_fb.gif"></img>
+                    </div>
+                    <div class="tw">
+                        <label for="tw" class="chkbox">__</label>
+                        <input type="checkbox" name="sns" id="tw" value="tw"></input>
+                        <img src="img/03_toukou/toko_sns_tw.gif"></img>
+                    </div>
+                    <div class="amb">
+                        <label for="amb" class="chkbox">__</label>
+                        <input type="checkbox" name="sns" id="amb" value="amb"></input>
+                        <img src="img/03_toukou/toko_sns_amb.gif"></img>
+                    </div>
+                </div>
+                <div class="submit clear">
+                    <form>
+                    <input type="submit" id="ok" name="ok" value=""></input>
+                    </form>
+                    <input type="reset" id="ng" name="ng" value=""></input>
+                </div>
+            </div><!-- fin -->
+
+            <!-- テスト．ここで新しいことを試す -->
+<!--             <div class="test clear">
+                
+                <input type="file" accept="image/*;capture=camera" id="cameraImage2">
+                <canvas id="myCanvas2" width="228" height="208" style="border:2px solid blue">
+                    canvasに対応したブラウザを使ってくだアイ
+                </canvas>
+            </div>
+ -->
+
+        </div><!-- toko -->
+    </div><!-- main -->
+    <!-- ページ本体ここまで -->
+    <script type="text/javascript" src="footer.js"></script>
+
+</body>
+</html>

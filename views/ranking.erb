@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no">
     <title>これ☆ほし</title>
-    <link rel="stylesheet" href="css/style_toko.css">
+    <link rel="stylesheet" href="css/style_ranking.css">
     <link rel="apple-touch-icon" href="img/_common/korehoshi.png">
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/toko.js"></script>
+    <script type="text/javascript" src="js/ranking.js"></script>
 </head>
 <body>
 
@@ -21,10 +21,310 @@
 
     <!-- ページ本体 -->
     <div id="main">
-
-    <h1>ランキングページ</h1>
-
-    </div><!-- main -->
+        <div class="menu">
+            <table>
+                <tr>
+                    <td>
+                        <img src="img/04_ranking/rank_title.gif" alt="人気ランキング" valign="top">
+                    </td>
+                    <td width="38">
+                                            <select id="span">
+                                                <option>週間ランキング</option>
+                                                <option>月間ランキング</option>
+                                                <option>年間ランキング</option>
+                                            </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" height="40"></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <div style="padding: 0px; width:382px;">
+                            <a href="#">
+                                <img src="img/04_ranking/rank_sex_man.png" alt="男性" style="height:60px; width:191px;float:left" border="0">
+                            </a>
+                            <a href="#">
+                                <img src="img/04_ranking/rank_sex_woman.png" alt="女性" style="height:60px; width:191px;float:left" border="0">
+                            </a>
+                        </div>
+                    </td>
+                    <td width="68">
+                    </td>
+                    <td>
+                                            <select id="age">
+                                                <option>10代</option>
+                                                <option>20代</option>
+                                                <option>30代</option>
+                                                <option>40代</option>
+                                            </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--１位-->
+        <div class="box">
+        <table>
+            <tr>
+                <td width="62">
+                    <img src="img/04_ranking/rank_no1.gif" alt="no1" width="62" height="64">
+                    
+                </td>
+                <td width="8">
+                </td>
+                <td>
+                    <div class="box_no1">
+                        <table>
+                            <tr>
+                                <td rowspan="3">
+                                    <img src="img/_common/photo01.png" alt="no1" width="154" class="radius" style="border:solid 5px #ffffff">
+                                </td>
+                                <td rowspan="3" width="20">
+                                &nbsp;
+                                </td>
+                                <td style="color:#f43434" width="100%">
+                                    <img src="img/_common/icon01.jpg" class="icon_radius" alt="アイコン" width="35" height="35">
+                                    kamimura3
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top" style="color:#ffffff">
+                                    <p>
+                                                                        この靴、ほしい～っ！
+                                    </p>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right" valign="bottom" height="10">
+                                    <span class="action-icon">
+                                        <div class="action"><input type="image" src="img/_common/btn_comment.png" class="comment_img" value="コメントする"></input></div>
+                                        <div class="action"><label class="star"><input type="checkbox" class="good"></input></label></div>
+                                        <div class="clear"></div>
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" height="30">
+                </td>
+            </tr>
+        </table>
+        </div>
+        <!--２位-->
+        <div class="box">
+        <table>
+            <tr>
+                <td width="60">
+                    <img src="img/04_ranking/rank_no2.gif" alt="no2" width="60" height="60">
+                </td>
+                <td width="12">
+                </td>
+                <td>
+                    <div class="box_no2">
+                        <table>
+                            <tr>
+                                <td rowspan="3">
+                                    <img src="img/_common/photo03.png" alt="no2" width="154" class="radius" style="border:solid 5px #ffffff">
+                                </td>
+                                <td rowspan="3" width="20">
+                                &nbsp;
+                                </td>
+                                <td style="color:#e65b24" width="100%">
+                                    <img src="img/_common/icon04.jpg"  class="icon_radius" alt="アイコン" width="35" height="35">
+                                    saki
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top" style="color:#ffffff">
+                                    <p>
+                                                                        今度のお給料はいったら買う！
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right" valign="bottom" height="10">
+                                    <span class="action-icon">
+                                        <div class="action"><input type="image" src="img/_common/btn_comment.png" class="comment_img" value="コメントする"></input></div>
+                                        <div class="action"><label class="star"><input type="checkbox" class="good"></input></label></div>
+                                        <div class="clear"></div>
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" height="30">
+                </td>
+            </tr>
+        </table>
+        </div>
+        <!--３位-->
+        <div class="box">
+        <table>
+            <tr>
+                <td width="60">
+                    <img src="img/04_ranking/rank_no3.gif" alt="no3" width="60" height="60">
+                    
+                </td>
+                <td width="12">
+                </td>
+                <td>
+                    <div class="box_no3">
+                        <table>
+                            <tr>
+                                <td rowspan="3">
+                                    <img src="img/_common/photo04.png" alt="no1" width="154" class="radius" style="border:solid 5px #ffffff">
+                                </td>
+                                <td rowspan="3" width="20">
+                                &nbsp;
+                                </td>
+                                <td style="color:#e65b24" width="100%">
+                                    <img src="img/_common/icon03.jpg"  class="icon_radius" alt="アイコン" width="35" height="35">
+                                    rupan009
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top" style="color:#ffffff">
+                                    <p>
+                                                                        来月発売だとよ！
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right" valign="bottom" height="10">
+                                    <span class="action-icon">
+                                        <div class="action"><input type="image" src="img/_common/btn_comment.png" class="comment_img" value="コメントする"></input></div>
+                                        <div class="action"><label class="star"><input type="checkbox" class="good"></input></label></div>
+                                        <div class="clear"></div>
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" height="30">
+                </td>
+            </tr>
+        </table>
+        </div>
+        <!--４位-->
+        <div class="box">
+        <table>
+            <tr>
+                <td width="60">
+                    
+                    <p style="position: relative;">
+                         <img src="img/04_ranking/rank_under_no.gif" class="icon_radius" alt="no4" width="60" height="60"><br />
+                        <span style="position: absolute; top: 5px; left: 20px;">
+                        <font size="25px" color="#e5c5af">
+                        4
+                        </span>
+                    </p>
+                </td>
+                <td width="12">
+                </td>
+                <td>
+                    <div class="box_under">
+                        <table>
+                            <tr>
+                                <td rowspan="3">
+                                    <img src="img/_common/photo02.png" alt="no4" width="154" class="radius" style="border:solid 5px #ffffff">
+                                </td>
+                                <td rowspan="3" width="20">
+                                &nbsp;
+                                </td>
+                                <td style="color:#3896b6" width="100%">
+                                    <img src="img/_common/icon02.jpg" class="icon_radius" alt="アイコン" width="35" height="35">
+                                    tsujitaku
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top" style="color:#af9e9e">
+                                    <p>
+                                                                        金貯めて迎えに行く!
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right" valign="bottom" height="10">
+                                <input type="image" src="img/04_ranking/rank_under_hoshi_01.gif" class="good" value="いいね" style="margin-right: -9px;" onclick="switchStar(this,'img/04_ranking/rank_under_hoshi_01.gif')"></input>
+                                 <input type="image" src="img/04_ranking/rank_under_comment_02.gif" class="comment_img" value="コメントする"></input>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" height="30">
+                </td>
+            </tr>
+        </table>
+        </div>
+         <!--５位-->
+        <div class="box">
+        <table>
+            <tr>
+                <td width="60">
+                <p style="position: relative;">
+                         <img src="img/04_ranking/rank_under_no.gif" class="icon_radius" alt="no4" width="60" height="60"><br />
+                        <span style="position: absolute; top: 5px; left: 20px;">
+                        <font size="25px" color="#e5c5af">
+                        5
+                        </span>
+                    </p>
+                </td>
+                <td width="12">
+                </td>
+                <td>
+                    <div class="box_under">
+                        <table>
+                            <tr>
+                                <td rowspan="3">
+                                    <img src="img/_common/photo01.png" alt="no5" width="154" class="radius" style="border:solid 5px #ffffff">
+                                </td>
+                                <td rowspan="3" width="20">
+                                &nbsp;
+                                </td>
+                                <td style="color:#ff5757" width="100%">
+                                    <img src="img/_common/icon01.jpg" class="icon_radius" alt="アイコン" width="35" height="35">
+                                    pu------
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top" style="color:#af9e9e">
+                                    <p>
+                                    この靴履くと美脚になれるらしい。
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right" valign="bottom" height="10">
+                                <input type="image" src="img/04_ranking/rank_under_hoshi_02.gif" class="good" value="いいね" style="margin-right: -9px;" onclick="switchStar(this,'img/04_ranking/rank_under_hoshi_02.gif')"></input>
+                                 <input type="image" src="img/04_ranking/rank_under_comment_02-04.gif" class="comment_img" value="コメントする"></input>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" height="30">
+                </td>
+            </tr>
+        </table>
+        </div>
+    </div>
     <!-- ページ本体ここまで -->
 
     <footer>

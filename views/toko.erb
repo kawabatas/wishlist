@@ -4,18 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no">
     <title>これ☆ほし</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/toko.css">
+    <link rel="stylesheet" href="css/style_toko.css">
     <link rel="apple-touch-icon" href="img/_common/korehoshi.png">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/toko.js"></script>
-    <script type="text/javascript" src="js/jquery.balloon.js"></script>
-    <script>
-        function test(){
-            alert("clicked!");
-        }
-    </script>
-
 </head>
 <body>
 <header>
@@ -30,9 +22,7 @@
         <div class="toko">
             <div class="top">
                 <div><img src="img/03_toukou/toko_title.gif"></img></div>
-                <div class="item">
-<!--                     <div id="photo"><input type="image" src="img/03_toukou/dummy_photo.png"></input></div> -->
-                    
+                <div class="item">                    
                     <!-- 写真は横向き（ホームボタンが右）でとる -->
                     <input type="file" accept="image/*;capture=camera" id="item_photo">
                     <canvas id="mycanvas" width="228" height="208"></canvas>
@@ -127,7 +117,26 @@
         </div><!-- toko -->
     </div><!-- main -->
     <!-- ページ本体ここまで -->
-    <script type="text/javascript" src="footer.js"></script>
+    <footer>
+        <div id="footer">
+            <a href="feed.html" target="_self">
+                <input type="image" src="img/_common/footer/footer_feed.png" class="footer-icon feed"></input>
+            </a>
+            <a href="home.html" target="_self">
+                <input type="image" src="img/_common/footer/footer_home.png" class="footer-icon home"></input>
+            </a>
+            <a href="toko.html" target="_self">
+                <input type="image" src="img/_common/footer/footer_toko_on.png" class="footer-icon toko"></input>
+            </a>
+            <a href="ranking.html" target="_self">
+                <input type="image" src="img/_common/footer/footer_rank.png" class="footer-icon rank"></input>
+            </a>
+            <a href="account.html" target="_self">
+                <input type="image" src="img/_common/footer/footer_account.png" class="footer-icon account"></input>
+            </a>
+            <div class="clear"></div>
+        </div>
+    </footer>
 
 </body>
 </html>

@@ -16,13 +16,21 @@ end
 # class Todo < ActiveRecord::Base
 # end
 
-get '/' do
+get '/feed' do
     # @todos = Todo.order("id desc").all
-    erb :index
+    erb :feed
 end
-
-get '/toko' do
+get '/home' do
+	erb :home
+end
+get '/' do
 	erb :toko
+end
+get '/ranking' do
+	erb :ranking
+end
+get '/account' do
+	erb :account
 end
 
 set :bind, '0.0.0.0'

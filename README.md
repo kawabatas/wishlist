@@ -11,7 +11,8 @@ korehoshi
 
 対応機種
 =======
-iPhone5 (Retina Display)
+#iPhone5 (Retina Display)
+iPhone4
 
 機能概要
 =====

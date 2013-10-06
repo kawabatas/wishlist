@@ -16,6 +16,9 @@ end
 # class Todo < ActiveRecord::Base
 # end
 
+get '/' do
+	erb :toko
+end
 get '/feed' do
     # @todos = Todo.order("id desc").all
     erb :feed
@@ -23,7 +26,7 @@ end
 get '/home' do
 	erb :home
 end
-get '/' do
+get '/toko' do
 	erb :toko
 end
 get '/ranking' do

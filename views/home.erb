@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>これ☆ほし</title>
+    <link rel="stylesheet" href="css/style_home.css">
+    <link rel="apple-touch-icon" href="img/_common/korehoshi.png">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <input type="image" src="img/_common/header/head_back.gif" onClick="history.go(-1);" class="back"></input>
+            <img src="img/_common/header/hrad_title.gif" class="logo" alt="コレ☆ホシ"></img>
+            <div class="clear"></div>
+        </div>
+    </header>
+    
+    <!-- ページ本体 -->
+    <div id="main">
+
+    <div id="inner">
+        <select name="sortbox" class="sortbox">
+            <option value="new">登録順（新しい）</option>
+            <option value="old">登録順（古い）</option>
+            <option value="cost_high">金額（高い）</option>
+            <option value="cost_cheap">金額（安い）</option>
+            <option value="hoshi">ホシ度</option>
+        </select>
+        <input type="image" src="img/02_home/home_setting.gif" id="setting"></input>
+
+        <div>
+            <div class="want_or_have want tgl_want" id="want">want</div>
+            <div class="want_or_have want2 tgl_want" id="want" style="display:none;">want</div>
+            <div class="want_or_have have tgl_have" id="have">have</div>
+            <div class="want_or_have have2 tgl_have" id="have" style="display:none;">have</div>
+        </div>
+        
+        <!-- item1 -->
+        <div class="homebox homebox_color1 tgl">
+            <img name="checkbox" class="checkbox" src="img/_common/check.gif"></img>
+            <div><a href="item1_detail.html" target="_self">
+                <img name="photo" class="photo" src="img/_common/photo01.png"></img>
+                <ul>
+                    <li name="itemName" class="itemName">Acker-Shoes</li>
+                    <li name="brand">Rachel Comey</li>
+                    <li name="price">￥44,900</li>
+                    <li name="comment">これ欲しい～！</li>
+                </ul>
+                <img name="hoshi_img" class="hoshi_img" src="img/02_home/home_hoshi.png"></img>
+                <textarea name="hoshi_num" class="hoshi_num">13</textarea>
+                <img name="comment_img" class="comment_img" src="img/02_home/home_comment.png"></img>
+                <textarea name="comment_num" class="comment_num">3</textarea>
+                <img name="nextBT" class="nextBT" src="img/_common/table_next.gif"></img>
+            </a></div>
+        </div>
+        <div class="homebox homebox_color1 tgl wh" style="display:none;">
+            <img name="checkbox" class="checkbox" src="img/_common/check.gif"></img>
+            <div><a href="item1_detail.html" target="_self">
+                <img name="photo" class="photo" src="img/_common/photo01.png"></img>
+                <ul>
+                    <li name="itemName" class="itemName">Acker-Shoes</li>
+                    <li name="brand">Rachel Comey</li>
+                    <li name="price">￥44,900</li>
+                    <li name="comment">これ欲しい～！</li>
+                </ul>
+                <img name="hoshi_img" class="hoshi_img" src="img/02_home/home_hoshi.png"></img>
+                <textarea name="hoshi_num" class="hoshi_num">13</textarea>
+                <img name="comment_img" class="comment_img" src="img/02_home/home_comment.png"></img>
+                <textarea name="comment_num" class="comment_num">3</textarea>
+                <img name="nextBT" class="nextBT" src="img/_common/table_next.gif"></img>
+            </a></div>
+        </div>
+
+        <!-- item2 -->
+        <div class="homebox homebox_color2 tgl">
+            <img name="checkbox" class="checkbox" src="img/_common/check.gif"></img>
+            <div><a href="item2_detail.html" target="_self">
+                <img name="photo" class="photo" src="img/_common/photo02.png"></img>
+                <ul>
+                    <li name="itemName" class="itemName">guitar</li>
+                    <li name="brand">Taylor</li>
+                    <li name="price">￥199,500</li>
+                    <li name="comment">待ってろよ！</li>
+                </ul>
+                <img name="hoshi_img" class="hoshi_img" src="img/02_home/home_hoshi.png"></img>
+                <textarea name="hoshi_num" class="hoshi_num">5</textarea>
+                <img name="comment_img" class="comment_img" src="img/02_home/home_comment.png"></img>
+                <textarea name="comment_num" class="comment_num">1</textarea>
+                <img name="nextBT" class="nextBT" src="img/_common/table_next.gif"></img>
+            </a></div>
+        </div>
+        <div class="homebox homebox_color2 tgl wh" style="display:none;">
+            <img name="checkbox" class="checkbox" src="img/_common/check.gif"></img>
+            <div><a href="item2_detail.html" target="_self">
+                <img name="photo" class="photo" src="img/_common/photo02.png"></img>
+                <ul>
+                    <li name="itemName" class="itemName">guitar</li>
+                    <li name="brand">Taylor</li>
+                    <li name="price">￥199,500</li>
+                    <li name="comment">待ってろよ！</li>
+                </ul>
+                <img name="hoshi_img" class="hoshi_img" src="img/02_home/home_hoshi.png"></img>
+                <textarea name="hoshi_num" class="hoshi_num">5</textarea>
+                <img name="comment_img" class="comment_img" src="img/02_home/home_comment.png"></img>
+                <textarea name="comment_num" class="comment_num">1</textarea>
+                <img name="nextBT" class="nextBT" src="img/_common/table_next.gif"></img>
+            </a></div>
+        </div>
+        
+        
+        <!-- item3 -->
+        <div class="homebox homebox_color1 tgl">
+            <img name="checkbox" class="checkbox" src="img/_common/check.gif"></img>
+            <div><a href="item3_detail.html" target="_self">
+                <img name="photo" class="photo" src="img/_common/photo03.png"></img>
+                <ul>
+                    <li name="itemName" class="itemName">長袖ワンピース</li>
+                    <li name="brand">snidel</li>
+                    <li name="price">￥12,900</li>
+                    <li name="comment">今度の給料で</li>
+                </ul>
+                <img name="hoshi_img" class="hoshi_img" src="img/02_home/home_hoshi.png"></img>
+                <textarea name="hoshi_num" class="hoshi_num">9</textarea>
+                <img name="comment_img" class="comment_img" src="img/02_home/home_comment.png"></img>
+                <textarea name="comment_num" class="comment_num">0</textarea>
+                <img name="nextBT" class="nextBT" src="img/_common/table_next.gif"></img>
+            </a></div>
+        </div>
+        <div class="homebox homebox_color1 tgl wh" style="display:none;">
+            <img name="checkbox" class="checkbox" src="img/_common/check.gif"></img>
+            <div><a href="item3_detail.html" target="_self">
+                <img name="photo" class="photo" src="img/_common/photo03.png"></img>
+                <ul>
+                    <li name="itemName" class="itemName">長袖ワンピース</li>
+                    <li name="brand">snidel</li>
+                    <li name="price">￥12,900</li>
+                    <li name="comment">今度の給料で</li>
+                </ul>
+                <img name="hoshi_img" class="hoshi_img" src="img/02_home/home_hoshi.png"></img>
+                <textarea name="hoshi_num" class="hoshi_num">9</textarea>
+                <img name="comment_img" class="comment_img" src="img/02_home/home_comment.png"></img>
+                <textarea name="comment_num" class="comment_num">0</textarea>
+                <img name="nextBT" class="nextBT" src="img/_common/table_next.gif"></img>
+            </a></div>
+        </div>
+        
+        
+        <!-- item4 -->
+        <div class="homebox homebox_color2 tgl last">
+            <img name="checkbox" class="checkbox" src="img/_common/check.gif"></img>
+            <div><a href="item4_detail.html" target="_self">
+                <img name="photo" class="photo" src="img/_common/photo04.png"></img>
+                <ul>
+                    <li name="itemName" class="itemName">LUPIN</li>
+                    <li name="brand"></li>
+                    <li name="price">￥5,980</li>
+                    <li name="comment">来月発売だとよ</li>
+                </ul>
+                <img name="hoshi_img" class="hoshi_img" src="img/02_home/home_hoshi.png"></img>
+                <textarea name="hoshi_num" class="hoshi_num">1</textarea>
+                <img name="comment_img" class="comment_img" src="img/02_home/home_comment.png"></img>
+                <textarea name="comment_num" class="comment_num">3</textarea>
+                <img name="nextBT" class="nextBT" src="img/_common/table_next.gif"></img>
+            </a></div>
+        </div>
+        <div class="homebox homebox_color2 tgl wh last" style="display:none;">
+            <img name="checkbox" class="checkbox" src="img/_common/check.gif"></img>
+            <div><a href="item4_detail.html" target="_self">
+                <img name="photo" class="photo" src="img/_common/photo04.png"></img>
+                <ul>
+                    <li name="itemName" class="itemName">LUPIN</li>
+                    <li name="brand"></li>
+                    <li name="price">￥5,980</li>
+                    <li name="comment">来月発売だとよ</li>
+                </ul>
+                <img name="hoshi_img" class="hoshi_img" src="img/02_home/home_hoshi.png"></img>
+                <textarea name="hoshi_num" class="hoshi_num">1</textarea>
+                <img name="comment_img" class="comment_img" src="img/02_home/home_comment.png"></img>
+                <textarea name="comment_num" class="comment_num">3</textarea>
+                <img name="nextBT" class="nextBT" src="img/_common/table_next.gif"></img>
+            </a></div>
+        </div>
+    </div>
+
+    </div><!-- main -->
+    <!-- ページ本体ここまで -->
+
+    <footer>
+        <div id="footer">
+            <form method="get" action="/feed">
+                <input type="image" src="img/_common/footer/footer_feed.png" class="footer-icon feed"></input>
+            </form>
+            <form method="get" action="/home">
+                <input type="image" src="img/_common/footer/footer_home_on.png" class="footer-icon home"></input>
+            </form>
+            <form method="get" action="/toko">
+                <input type="image" src="img/_common/footer/footer_toko.png" class="footer-icon toko"></input>
+            </form>
+            <form method="get" action="/ranking">
+                <input type="image" src="img/_common/footer/footer_ranking.png" class="footer-icon rank"></input>
+            </form>
+            <form method="get" action="/account">
+                <input type="image" src="img/_common/footer/footer_account.png" class="footer-icon account"></input>
+            </form>
+            <div class="clear"></div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+/* This is a CSS file */
+
+/* fonts */
+@font-face {
+    font-family : ipaexg;
+    src: url(../fonts/ipaexg.ttf);
+}
+/* このフォントを使うには，font-family:ipaexg;  */
+
+/* 調整用 */
+.clear{
+    clear : both;
+}
+
+/* body */
+body{
+    font-family : ipaexg;
+    background-color : #faf4ee;
+    margin : 0;
+    padding : 86px 0 150px 0;
+    min-width : 640px;
+    width : 640px;
+    max-width : 640px;
+}
+
+/* header */
+#header{
+    background-color : #ff5757;
+    height : 86px;
+    width : 640px;
+    position: fixed !important;
+    position: absolute;  
+    top: 0;  
+    left: 0;  
+    z-index : 1;
+    
+}
+
+#header .back{
+    position: absolute;
+    top: 16px;/*(86-50)/2*/
+    left: 30px;
+}
+
+#header .logo{
+    position : absolute;
+    width : auto;
+    top : 26px; /*(86-32)/2*/
+    left : 220px; /*(640-199)/2*/
+}
+
+/*#header .bell{
+    position : absolute;
+    top : 16px;
+    right: 30px;
+}
+
+#header .bell2{
+    position : absolute;
+    width : auto;
+    top : 16px;
+    right: 30px;
+}*/
+
+/* main */
+#main{
+    width : 640px;
+    overflow : auto;
+}
+
+/*ranking.html*/
+
+.menu{
+    box-sizing: border-box;
+    padding:40px 30px 40px 30px;
+    width : 100%;
+    }
+
+.box{
+    box-sizing: border-box;
+    width : 100%;
+    padding:0px 30px 0px 40px;
+    letter-spacing: 0.5em;
+    }
+
+.box_no1{
+    padding:20px;
+    width:494px;
+    height:196px;
+    box-sizing: border-box;
+    background-image:url("../img/04_ranking/rank_no1_bg.gif");
+    background-size:cover;
+
+    }
+.box_no2{
+    padding:20px;
+    width:494px;
+    height:196px;
+    box-sizing: border-box;
+    background-image:url("../img/04_ranking/rank_no2_bg.gif");
+    background-size:cover;
+    }
+.box_no3{
+    padding:20px;
+    width:494px;
+    height:196px;
+    box-sizing: border-box;
+    background-image:url("../img/04_ranking/rank_no3_bg.gif");
+    background-size:cover;
+    }
+.box_under{
+    box-sizing: border-box;
+    background-image:url("../img/04_ranking/rank_under_bg.gif");
+    background-size:cover;
+    padding:20px;
+    width:494px;
+    height:196px;
+    }
+    
+.radius{
+    -webkit-border-radius : 20px;
+    -moz-border-radius : 20px;
+    -ms-border-radius : 20px;
+    -o-border-radius : 20px;
+    border-radius : 20px;
+}
+
+.icon_radius{
+    -webkit-border-radius : 5px;
+    -moz-border-radius : 5px;
+    -ms-border-radius : 5px;
+    -o-border-radius : 5px;
+    border-radius : 5px;
+}
+
+table,td{
+    font-size:24px;
+    border-collapse:collapse;
+    }
+    
+
+select{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    font-size: 13px;
+    text-indent: 1em;
+    border: none;
+    cursor: pointer;
+}
+option{
+    font-family:ipaexg;
+}
+
+select#age{
+    width: 151px;
+    height: 61px;
+    background-image: url(../img/04_ranking/rank_nendai.gif);
+    font-size: 24px;
+    font-kerning: normal;
+    letter-spacing: normal;
+    font-weight: bold;
+    color: #292929;
+    text-align: left;
+}
+select#span{
+    width: 276px;
+    height: 60px;
+    background-image: url(../img/04_ranking/rank_kikan.gif);
+    font-size: 24px;
+    font-kerning: normal;
+    letter-spacing: normal;
+    font-weight: bold;
+    color: #292929;
+    position: relative;
+    left: 30px;
+}
+
+.action-icon .star {
+    background: url(../img/_common/btn_hoshi_js.png) no-repeat left top;
+    height: 24px;
+    line-height: 24px;
+    display: block;
+    cursor: pointer;
+    padding: 0 0 0 30px;
+    overflow: hidden;
+}
+
+input[type="checkbox"]{
+    opacity: 0;
+    position: absolute;
+}
+
+.action-icon .c_on {
+    background-position: left bottom;
+}
+
+.action-icon .action {
+    float: right;
+}
+
+
+/* footer */
+#footer{
+    background-color : #454545;
+    width : 640px;
+    height : 112px;
+    filter : alpha(opacity=95);
+    -moz-opacity : 0.95;
+    opacity : 0.95;
+    position : fixed !important;
+    position : absolute;  
+    bottom : 0;  
+    left : 0;  
+    z-index : 1;
+}
+
+#footer .footer-icon{
+    margin-top: 20px;
+    float : left;
+}
+
+#footer .feed{
+    margin-left: 30px;
+    margin-right: 62px;
+}
+#footer .home{
+    margin-right: 56px;
+}
+#footer .toko{
+    margin-right: 40px;
+}
+#footer .rank{
+    margin-right: 34px;
+}

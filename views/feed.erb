@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no">
     <title>これ☆ほし</title>
-    <link rel="stylesheet" href="css/style_toko.css">
+    <link rel="stylesheet" href="css/style_feed.css">
     <link rel="apple-touch-icon" href="img/_common/korehoshi.png">
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/toko.js"></script>
+    <script type="text/javascript" src="js/feed.js"></script>
 </head>
 <body>
     <header>
@@ -21,9 +21,83 @@
     <!-- ページ本体 -->
     <div id="main">
 
-    <h1>フィードのページ</h1>
-
-    </div><!-- main -->
+        <!-- 検索 -->
+        <nav>
+        <div id="nav">
+            <input type="search" name="search" maxlength="32" placeholder="キーワードで検索する" class="search-form"></input>
+            <input type="button" value="" onclick="this.form.submit();" class="search-submit"></input>
+        </div>
+        </nav>
+    
+        <div class="container-line">
+            <article>
+            <div class="container left me">
+                <div class="user-info">
+                    <img src="img/_common/icon01.jpg" class="user-icon"></img>
+                    <h2>kamimura3</h2>
+                </div>
+                <input type="image" src="img/_common/photo01.png" class="item"></input>
+                <div class="comment_area">
+                    この靴、ほしい～っ！
+                </div>
+                <div class="action-icon">
+                    <div class="action"><label class="star"><input type="checkbox" class="good"></input></label></div>
+                    <div class="action"><input type="image" src="img/_common/btn_comment.png" class="comment_img" value="コメントする"></input></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            </article>    
+            <article>
+            <div class="container right you">
+                <img src="img/_common/icon02.jpg" class="user-icon"></img>
+                <h2>tsujitaku</h2>
+                <input type="image" src="img/_common/photo02.png" class="item"></input>
+                <div class="comment_area">
+                    金貯めて迎えに行くから待っててくれよな！
+                </div>
+                <div class="action-icon">
+                    <div class="action"><label class="star"><input type="checkbox" class="good"></input></label></div>
+                    <div class="action"><input type="image" src="img/_common/btn_comment.png" class="comment_img" value="コメントする"></input></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            </article>
+        </div>
+    
+        <div class="container-line">
+            <article>
+            <div class="container left you">
+                <img src="img/_common/icon03.jpg" class="user-icon"></img>
+                <h2>rupan009</h2>
+                <input type="image" src="img/_common/photo03.png" class="item"></input>
+                <div class="comment_area">
+                    今度のお給料はいったら買うよーーー！！
+                </div>
+                <div class="action-icon">
+                    <div class="action"><label class="star"><input type="checkbox" class="good"></input></label></div>
+                    <div class="action"><input type="image" src="img/_common/btn_comment.png" class="comment_img" value="コメントする"></input></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            </article>
+    
+            <article>
+            <div class="container right you">
+                <img src="img/_common/icon04.jpg" class="user-icon"></img>
+                <h2>saki_pororin</h2>
+                <input type="image" src="img/_common/photo04.png" class="item"></input>
+                <div class="comment_area">
+                    来月発売だとよ！
+                </div>
+                <div class="action-icon">
+                    <div class="action"><label class="star"><input type="checkbox" class="good"></input></label></div>
+                    <div class="action"><input type="image" src="img/_common/btn_comment.png" class="comment_img" value="コメントする"></input></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            </article>
+        </div>
+    </div>
     <!-- ページ本体ここまで -->
 
     <footer>

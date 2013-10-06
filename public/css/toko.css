@@ -1,0 +1,258 @@
+/*top*/
+#main .toko .top{
+    margin : 40px 30px 40px 30px;
+    overflow: auto;
+}
+#main .toko .top .item{
+    margin-top: 20px;
+}
+/*#main .toko .top .item #photo{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    border : 2px solid #ffffff;
+    float: left;
+}
+*/
+#main .toko .top .item #mycanvas{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    border : 2px solid #ffffff;
+    float: left;
+    background-image: url("../img/03_toukou/toko_photo.gif");
+}
+#main .toko #item_photo{
+    width: 228px;
+    height: 208px;
+    opacity: 0;/*本番時に0にする*/
+    position: absolute;
+    top: 188px;/*86+40+38+2+20*/
+    left: 32px;
+}
+#main .toko .top .item textarea{
+    font-family : ipaexg;
+    font-size: 24px;
+    font-kerning: normal;
+    letter-spacing: normal;
+    border: none;
+    width: 302px;/*302+20+10?=332*/
+    height: 192px;/*192+20=212*/
+    background-image: url("../img/03_toukou/toko_comment_bg_r.gif");
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    padding-top: 20px;
+    position: relative;
+    left: 14px;    
+}
+#main .toko .top .item .c5{
+    color: #c5c5c5;
+}
+#main .toko .top .item .29{
+    color: #292929;
+}
+
+/*details*/
+#main .toko .details{
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-left: 30px;
+    width: 610px;
+    background-color: #ff5757;
+    position: relative;
+}
+#main .toko .details .first{
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+#main .toko .details label{
+    color : #ffffff;
+    font-family : ipaexg;
+    font-size : 24px;/*24*/
+/*    border: none;*/
+}
+#main .toko .details input[type="text"]{
+    font-family : ipaexg;
+    font-size : 28px;
+    font-kerning: normal;
+    letter-spacing: normal;
+    border: none;
+    width: 416px;/*iPhone4ではちょうどのサイズ．iPhon5だと430px??*/
+    height: 40px;/*iPhone4ではちょうどのサイズ．iPhon5だと40px??*/
+    padding-top: 12px;
+    padding-left: 30px;
+    background-image: url("../img/03_toukou/toko_in_bg.gif");
+    background-repeat: no-repeat;    
+}
+#main .toko .details .c5c5{
+    font-size : 28px;
+    color: #c5c5c5;    
+}
+#main .toko .details .2929{
+    font-size : 22px;
+    color: #292929;    
+}
+#main .toko .details .item_name label{
+    margin-right: 38px;
+}
+#main .toko .details .item_name input{
+    margin-top: 20px;
+}
+#main .toko .details .shop label{
+    margin-right: 64px;
+}
+#main .toko .details .shop input{
+    margin-top: 20px;
+}
+#main .toko .details .cost label{
+    margin-right: 64px;
+}
+#main .toko .details .cost input{
+    margin-top: 20px;
+}
+#main .toko .details .url label{
+    margin-right: 64px;
+}
+#main .toko .details .url input{
+    margin-top: 20px;
+}
+#main .toko .details .tag label{
+    margin-right: 64px;
+}
+#main .toko .details .tag input{
+    margin-top: 20px;
+}
+#main .toko .details .priority{
+    padding-bottom: 40px;
+}
+#main .toko .details .priority input{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+#main .toko .details .priority label{
+    margin-right: 44px;
+    position: relative;
+    top: -10px;
+}
+
+/*fin*/
+#main .toko .fin{
+    padding-top: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 520px;/*640-60-60*/
+    position: relative;
+}
+#main .toko .fin .select_public{
+    margin-left: 12px;/*72-60*/
+    margin-right: 12px;
+}
+#main .toko .fin .select_public label{
+    font-size: 42px;
+    color: #faf4ee;
+    background-image: url("../img/03_toukou/toko_check.gif");
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+#main .toko .fin .select_public .public .rdobtn{
+    background-image: url("../img/03_toukou/toko_check_on.gif");    
+}
+#main .toko .fin .select_public .label_txt{
+    color: #ff5757;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: none;
+    position: relative;
+    top: -8px;
+}
+#main .toko .fin .select_public input{
+    height: 10px;
+    width: 10px;
+    opacity: 0;/*本番時に0にする*/
+    position: relative;
+    top: 0px;
+    left: -20px;    
+}
+#main .toko .fin .select_public .public{
+    float: left;
+}
+#main .toko .fin .select_public .public .label_txt{
+    position: relative;
+    left: -30px;/*-50pxで重なる*/
+}
+#main .toko .fin .select_public .no_public{
+    float: right;
+}
+#main .toko .fin .select_public .no_public .rdobtn{
+    position: relative;
+    right: -30px;/*-50pxで重なる*/
+}
+
+#main .toko .fin .sns{
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 480px;
+}
+#main .toko .fin .sns input[type="checkbox"]{
+    height: 10px;
+    width: 10px;
+    opacity: 0;/*本番時に0にする*/
+    position: relative;
+    top: 0px;
+    left: -40px;
+}
+#main .toko .fin .sns label{
+    position: relative;
+    font-size: 42px;
+    color: #faf4ee;
+    background-image: url("../img/03_toukou/toko_check.gif");
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+#main .toko .fin .sns img{
+    margin-left: -12px;/*-28pxで重なる*/
+}
+
+#main .toko .fin .sns .fb{
+    float: left;
+}
+#main .toko .fin .sns .amb{
+    float: right;
+}
+#main .toko .fin .sns .tw{
+    float: left;
+    margin-left: 82px;/*320-80-42-16-50-42-8*/
+}
+
+#main .toko .fin .submit{
+    padding-top: 40px;
+}
+#main .toko .fin .submit #ok{
+    float: left;
+    background-image: url("../img/03_toukou/toko_btn_ok.gif");
+    width: 214px;
+    height: 60px;
+    border: none;
+}
+#main .toko .fin .submit #ng{
+    float: right;
+    background-image: url("../img/03_toukou/toko_btn_ng.gif");
+    width: 214px;
+    height: 60px;
+    border: none;
+}
+
+
+
+/*テストここであたらしいことは試す*/
+#main .toko .test{
+    margin-top: 100px;
+    margin-left: 100px;
+    float: left;
+}
